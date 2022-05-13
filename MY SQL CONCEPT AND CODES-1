@@ -1,0 +1,43 @@
+SQL: Structured Query Language.
+What is SQL ?
+SQL (Structured Query Language) is the standard language for accessing and manipulating the database. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.
+
+DATABASES: Databases is the organised data which can be easily accessed and managed.
+
+What Can SQL do?
+•	SQL can execute queries against a database.
+•	SQL can retrieve data from a database.
+•	SQL can insert records in a database.
+•	SQL can update records in a database.
+•	SQL can delete records from a database.
+•	SQL can create new databases.
+•	SQL can create new tables in a database.
+•	SQL can create stored procedures in a database.
+•	SQL can create views in a database.
+•	SQL can set permissions on tables, procedures, and views.
+
+SOME OF THE CODES USE IN SQL:
+
+HOW TO CREATE A DATABASE IN SQL?
+
+SYNTAX: TYPE- Create databse company.
+
+Note:- After creating a databse you have to use that database to store some data in it.
+
+use company;
+
+create table empl1(
+emp_id int auto_increment primary key,
+name varchar(30),
+age int,
+department varchar(30),
+salary int default 0,
+city varchar(30) default 'Delhi');
+
+insert into empl1(name,age,department) values ('Vivek', 28, 'Hr'), ('manoj', 24, 'sales');
+insert into empl1(name,age,department,salary,city) values
+('Jaza', 18, 'Ceo', 500000, 'up' ), ('Abhishek',30, 'Sales head', 54000,'Mumbai'),
+('Raj', 47, 'finance', 100000,'kholapur'),('rekha',45,'hr',45000,'Uttrakhand'),
+('Mayank', 28, 'Sales',26000,'up'),('Vasooli bhai',45,'Loan Department',50000,'Panwale'),
+('Lucky',30,'hr head',34000,'Mumbai');
+select * from empl1;
