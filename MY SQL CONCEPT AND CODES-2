@@ -1,0 +1,45 @@
+SOME BASIC COMMAND TO WORK ON SQL :
+
+Q1. If you want to create a table empl1 you can create table by passing following command?
+COMMAND :-
+
+create table empl1(
+emp_id int auto_increment primary key,
+name varchar(30),
+age int,
+department varchar(30),
+salary int default 0,
+city varchar(30) default 'Delhi');
+
+Q2). If you want to insert any record in the table you have created you can insert by passing following command? 
+
+COMMAND:-
+
+insert into empl1(name,age,department) values ('Vivek', 28, 'Hr'), ('manoj', 24, 'sales');
+insert into empl1(name,age,department,salary,city) values
+('Jaza', 18, 'Ceo', 500000, 'up' ), ('Abhishek',30, 'Sales head', 54000,'Mumbai'),
+('Raj', 47, 'finance', 100000,'kholapur'),('rekha',45,'hr',45000,'Uttrakhand'),
+('Mayank', 28, 'Sales',26000,'up'),('Vasooli bhai',45,'Loan Department',50000,'Panwale'),
+('Lucky',30,'hr head',34000,'Mumbai');
+select * from empl1;
+
+SOME OF THE QUERRIES YOU HAVE DEAL ON DAILY BASIS :-
+
+Q3). If you want only employee whose id is 12 from the table you have created in SQL?
+
+COMMAND:-
+
+---------->  select * from empl1 where emp_id=12; 
+
+Q4). Write a querry where employer wants those employee whose salary is greater than equal to 50k?
+
+COMMAND:-
+
+---------->   select * from empl1 where salary<=50000;
+
+Q5). Write a querry to generate those employees whose is above 50K and age is below 45 years?
+
+COMMAND:-
+
+--------->    select * from empl1 where salary>=50000 and age>=45;
+
