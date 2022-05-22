@@ -1,0 +1,37 @@
+Q). Suppose you have to create a table by the name of Record where columns should be id, name, age, salary and city?
+
+ANSWER :- You need to follow the following command to make the table record :-
+
+
+create table record(
+id int auto_increment primary key,
+name varchar (30),
+age int, check (age>=18),
+salary int, check (salary>=0),
+department varchar(30) default 'Sales',
+city varchar(30) default 'Delhi' 
+);
+
+Note :- There are some points in the table you might get confused which is being used :-
+
+1). ID:- 
+
+a). We should take id in a integer form so for that I have used int.
+
+b). Auto_increment :- This is used so that every data you might be entering should get auto increment you dont have to give any number manually.
+
+c). Primary:- These are those key which will help you to check whether there should not be any repeated and null values in the table.
+
+2). NAME:-
+
+Since the name is always in alphabets so I have used VARCHAR() in it.
+
+3). AGE:-
+
+Age is also measured in numerical form so for that int data type has been used. Another thing we could se is CHECK.
+
+Check:- This is used to check whether the age entered is passing the criteria which has been entered through this check.
+
+4). CITY AND DEPARTMENT :- Both are represented alphabetically so VARCHAR() has been used,
+
+DEFAULT:- This command is used to check if any entery made is left empty so by default it would enter that particular assigned value. 
