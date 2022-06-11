@@ -1,0 +1,55 @@
+IN PREVIOUS CLASS WE LEARN TO CREATE A TABLE NOW HOW TO PUT DATA IN THAT TABLE.
+
+--- AFTER CREATING A TABLE RECORD.
+
+----TO PUT THE DATA IN THE TABLE RECORD WE NEED TO PASS "INSERT INTO " COMMAND.
+
+----------> insert into record(name,age,salary,department,city)
+values ('Manoj',23,54000,'Sales','Mumbai'),('Vivek',28,65000,'Finance head','Delhi'),
+('Jaza',19,48000,'Hr','Delhi'),('jagdeep',40,40000,'Sales','Banglore'),('Binod',23,30000,'Sales','Mumbai'),
+('Alok',29,45000,'Hr','Banglore'),('deep',20,40000,'Finance','Delhi'),('vinod',33,490000,'hr','Mumbai');
+
+--------------> insert into record(name,age,salary,department,city)
+values ('Deepak',43,64000,'Sales','Mumbai'),('Manoj',48,65000,'Finance','Delhi'),
+('Rekha',29,48000,'Hr','Banglore'),('Neha',40,40000,'Sales','Banglore'),('Mamta',30,30000,'Sales','Mumbai'),
+('Kapil',43,34000,'Sales','Mumbai'),('Lokesh',40,35000,'Finance','Banglore'),
+('Kanika',29,48000,'Sales','Mumbai'),('Menali',38,48000,'hr','Delhi'),('Hemani',30,30000,'Sales','Banglore');
+
+NOTE- THIS IS THE WAY HOW WE WILL PUT SOME RECORDS IN THE TABLE.
+
+******* SOME IMPORTANT QUERRIES WHICH COULD BE USED IN EXTRACTING INFORMATION FROM THE DATA**********
+
+
+1. FINDOUT THE RECORDS ENTERED IN THE TABLE IN TABULAR FORM?
+SOLUTION:-  
+     -------->       SELECT * FROM RECORD;
+     
+     
+2. HOW TO PUT THE DATA IN RECORD IN THE PROPER MANNER OR SORT IT BY THE NAME?
+
+SOLUTION:- 
+       ---------->  SELECT * FROM RECORD ORDER BY NAME;
+       
+NOTE:- ORDER BY: THIS IS THE COMMAND WHICH IS USED TO SORT THE COLUMN.
+
+3. HOW TO ARRANGE THE AGE COLUMN IN THE DECREASING ORDER?
+
+SOLUTION:-
+
+    ----------> SELECT * FROM RECORD ORDER BY AGE DESC;
+
+NOTE:- BY DEFAULT IT IS SET IN ASCENDING ORDER BUT IF YOU WANT IN DESCENDING ORDER USE "DESC" COMMAND.
+
+4. HOW TO FIND CITY, SALARY, NAME AND DEPARTMENT AND ARRANGE THE SALARY IN DESCENDING ORDER AND CITY IN PROPER ORDER?
+
+SOLUTION:-
+
+        --------> SELECT CITY, SALARY, DEPARTMENT, NAME FORM RECORD ORDER BY CITY, SALARY DESC;
+        
+5. WRITE A QUERRY TO GENERATE A INFORMATION WHERE DEPARTMENT SHOULD BE HR AND SALARY SHOULD BE ABOVE 50K ?
+
+SOLUTION:-
+
+        ----------> SELECT * FROM RECORD WHERE DEPARTMENT="HR" AND SALARY>=50000;
+        
+NOTE:- "WHERE" COMMAND IS USED TO PUT THE CONDITION.
