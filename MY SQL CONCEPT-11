@@ -1,0 +1,55 @@
+SOME FURTHER QUERRIES RELATED TO MY SQL :-
+
+THE CONCEPT OF JOIN :
+
+THERE ARE FOUR TYPE OF JOINS IN MY SQL :-
+
+1. INNER JOIN: Returns records that have matching values in both tables. 
+
+2. LEFT JOIN: Returns all records from the left table, and the matched records from the right table.
+
+3. RIGHT JOIN: Returns all records from the right table, and the matched records from the left table.
+
+4. CROSS JOIN / FULL JOIN : Returns all records from both tables.
+
+
+EXAMPLE 1 :- CREATE TWO TABLES ONE OF STUDENT OTHER OF SPORTS :-
+
+IN STUDENT TABLE CREATE COLUMNS BY THE NAME OF ROLL NUMBER, NAME AND SPORTS ID.
+
+IN SPORTS TABLE CREATE COLUMNS BY THE NAME OF SPORTS ID, SPORTS NAME AND STATE.
+
+AFTER MAKING THE TABLE USE :-
+
+1. INNER JOIN
+
+2. LEFT JOIN
+
+3. RIGHT JOIN
+
+4. CROSS JOIN
+
+SOLUTION :-
+
+     --------> CREATE TABLE STUDENTS (
+               ROLL_NUMBER INT AUTO_INCREMENT PRIMARY KEY,
+               NAME VARCHAR(30),
+               SPORTS_ID INT);
+               
+               
+     --------> CREATE TABLE SPORTS (
+               SPORTS_ID INT,
+               SPORTS_NAME VARCHAR(30),
+               STATE VARCHAR(30);
+               
+     COMMAND FOR JOINS :-
+     
+     --------> SELECT * FROM STUDENTS INNER JOIN SPORTS ON STUDENTS.SPORTS_ID=SPORTS.SPORTS_ID;
+     
+     --------> SELECT * FROM STUDENTS LEFT JOIN SPORTS ON STUDENTS.SPORTS_ID=SPORTS.SPORTS_ID;
+     
+     --------> SELECT * FROM STUDENTS RIGHT JOIN SPORTS ON STUDENTS.SPORTS_ID=SPORTS.SPORTS_ID;
+     
+     --------> SELECT * FROM STUDENTS CROSS JOIN SPORTS ON STUDENTS.SPORTS_ID=SPORTS.SPORTS_ID;
+     
+               
